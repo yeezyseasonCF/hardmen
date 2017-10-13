@@ -1,57 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-
+/* slightly larger rezing of the page, as I had heard in my last class of html it is a trick to make sure everything fits */
 
 html {
 	height: 101%;
 }
+
+
+/* simple background instructions, I used the overflow commands to make sure I could see when sizes were funky */
 
 body {
 	
 	background-color: #F5F5F5;
 	font-size: 12pt;
 	width: 100%;
-	padding: 0px;
+	padding: 10px;
 	overflow-y: scroll;
 	overflow-x: hidden;
-
+	font-kerning: auto;
 }
 
+/* I am a fan of toning the opacity down the tiniest bit for an nicer color */
 
 #menu {
 
 	font-family:'Oswald';
 	opacity: 0.95;
-	float: left;
-	display: block;
+
 }
 
+
+/* the overflow hidden command lets the bar go across the page. */
 
 #menu ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
+	background-color:#840B23;
+    overflow: hidden;
+    
+
 }
 
 
+/* i belive that uppercase letters on a menu are usually essential */
 
-#menu a {
-	display: block;
+#menu li {
+
 	text-transform: uppercase;
 	opacity: 0.95;
 	float: left;
+	background-color:#840B23;
+
 
 
 }
 
+
+#menu li a {
+	display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 16pt;
+	color: #fffffc;
+}
+
+
+/* here I inverse the color of the menu so that it keeps accessibility standards, and the hover is easy to see. */
+
 #menu li a:hover, nav li a.active {
-	background-color:#FFFFFC;
+	display: block;
+	background-color:#fffffc;
+	font-size: 16pt;
+	color: #840B23;
 	opacity: 0.95;
 	display: block;
     text-align: center;
-    padding: 2px 2px;
-    text-decoration: none;
+    padding: 14px 16px;
+
 }
 
 
@@ -66,3 +90,14 @@ font-family: 'Oswald', sans-serif;
 }
 
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
