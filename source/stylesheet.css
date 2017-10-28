@@ -1,24 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-
-/* slightly larger rezing of the page, as I had heard in my last class of html it is a trick to make sure everything fits */
-
-html {
-	height: 101%;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 /* simple background instructions, I used the overflow commands to make sure I could see when sizes were funky */
 
 body {
 	
+	font-family: 'Roboto Condensed', sans-serif;
 	background-color: #F5F5F5;
-	font-size: 12pt;
-	width: 100%;
+	font-size: 14pt;
 	padding: 10px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	font-kerning: auto;
+
 }
+
+
+
+img{
+	max-width: 100%;
+    height:auto;
+
+}
+
+#body img {
+	border-style: ridge;
+	border-width: 8px;
+	max-width: 100%;
+
+}
+
 
 /* I am a fan of toning the opacity down the tiniest bit for an nicer color */
 
@@ -101,3 +112,57 @@ th, td {
 }
 
 tr:nth-child(even){background-color: #f2f2f2}
+
+
+
+a:link {
+	color:red;
+
+}
+
+
+a:hover {
+	color: grey;
+}
+
+a:visited {
+	color: blue;
+}
+
+
+div.callout {
+	background-color: #840B23;
+	color: #ccc;
+	padding: 20px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #999;
+	border: 1px solid #333;
+	text-shadow: 0 0 1px #000;
+	width:50%;
+
+}
+
+
+.container {
+    position: relative;
+
+
+}
+
+
+.bottomleft {
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    font-size: 18px;
+}
+
+#container img {
+	  width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.footer {
+	text-align: center;
+}
