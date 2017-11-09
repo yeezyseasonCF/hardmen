@@ -19,14 +19,48 @@
 
 
 <?php
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["firstname"]);
+  $email = test_input($_POST["email"]); }
+
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+
+
+
+if (isset($_GET['submit'])) {echo "Hello {$_GET[firstname]}";
+}
+
+
+
+if(isset($_POST['firstname'])){ $name = $_POST['firstname']; }
+
+$firstnameErr = "";
+$firstname = "";
 $emailErr = "";
 $email = "";
+
 
   if (empty($_POST["email"])) {
     $emailErr = "Email is required";
   } else {
-    $email =($_POST["email"]);
+    $email = ($_POST["email"]);
   }
+
+  if (empty($_POST["firstname"])) {
+    $firstnameErr = "Name is required";
+  } else {
+    $email = ($_POST["firstname"]);
+  }
+
 
 ?>
 
@@ -50,7 +84,7 @@ $email = "";
 	
 	<li><a href="htmlcopeland.html">Home</a></li>
 	<li><a href="services.html">Services</a></li>
-	<li><a href="contacts.html">Contact Info</a></li>
+	<li><a href="contacts.php">Contact Info</a></li>
 
 </ul>
 
@@ -98,25 +132,52 @@ $email = "";
 
 <div id="reqform">
 
-<form method="_POST" action="contacts.html">
+<p>* Indicates required section</p>
 
-  First name:<br>
-  <input type="text" name="firstname"><br>
+<form method="post" action="contacts.php">   
+
+  First name: *<br>
+  <input type="text" name="firstname"><br> 
   <br>
   Last name:<br>
   <input type="text" name="lastname"><br>
   <br>
-  Email: <br>
-  <input type="text" name="email"><br> <span class="error"> <?php echo $emailErr;?></span>
+  Email: * <br>
+  <input type="text" name="email"><br> <span class="error"> 
 	
- <?php echo "$_POST["firstname"]"; ?><br>
-Your email address is: <?php echo $_POST["email"]; ?>
+
+
 
 <br>
 
 
-  <input type="submit" name="submit" value="Submit"> 
+  <input type="submit" name="Submit" value="send"> 
   
+<br><br><br>
+
+
+ <?php
+if (isset($_POST['firstname'])) {
+ echo"Hello {$_POST["firstname"]}"; } 
+
+ ?>
+<br>
+<br>
+  <?php
+
+if (isset($_POST['email'])) {
+ echo"Your email address is:  {$_POST["email"]}"; }
+?>
+
+<?php 
+
+if (empty($_POST['email'])) {
+ trigger_error("You must input a valid email address"); }
+
+
+?>
+	
+
 <br>
 <br>
 <br>

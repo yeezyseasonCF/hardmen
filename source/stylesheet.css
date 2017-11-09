@@ -3,6 +3,7 @@
 
 /* simple background instructions, I used the overflow commands to make sure I could see when sizes were funky */
 
+
 body {
 	
 	font-family: 'Roboto Condensed', sans-serif;
@@ -15,7 +16,23 @@ body {
 
 }
 
+#serviceimg {
+	vertical-align: center;
 
+}
+
+
+#reqform {
+	text-align: center;
+	background-color: #840B23;
+	color: #ccc;
+	padding: 20px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #999;
+	border: 1px solid #333;
+	text-shadow: 0 0 1px #000;
+	
+}
 
 img{
 	max-width: 100%;
@@ -24,8 +41,8 @@ img{
 }
 
 #body img {
-	border-style: ridge;
-	border-width: 8px;
+	border-style: inset;
+	border-width: 4px;
 	max-width: 100%;
 
 }
@@ -133,12 +150,12 @@ a:visited {
 div.callout {
 	background-color: #840B23;
 	color: #ccc;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 3px;
 	box-shadow: 0px 0px 20px #999;
 	border: 1px solid #333;
 	text-shadow: 0 0 1px #000;
-	width:50%;
+	width:33%;
 
 }
 
