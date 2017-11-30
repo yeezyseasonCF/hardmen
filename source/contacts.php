@@ -84,7 +84,7 @@ $email = "";
 	
 	<li><a href="index.html">Home</a></li>
 	<li><a href="services.html">Services</a></li>
-	<li><a href="contacts.php">Contact Info</a></li>
+	<li><a href="contacts.html">Contact Info</a></li>
 
 </ul>
 
