@@ -157,21 +157,25 @@ $email = "";
 
 
  <?php
+
 if (isset($_POST['firstname'])) {
  echo"Hello {$_POST["firstname"]}"; } 
 
  ?>
 <br>
 <br>
-  <?php
+
+
+<?php
 
 if (isset($_POST['email'])) {
  echo"Your email address is:  {$_POST["email"]}"; }
+
 ?>
 
 <?php 
 
-if (empty($_POST['email'])) {
+if (empty($_POST['emailErr'])) {
  trigger_error("You must input a valid email address"); }
 
 
@@ -212,6 +216,7 @@ if (empty($_POST['email'])) {
 
 <div class="footer">
 
+<footer>
 
 <i>Dream Change Coalition</i>
 
@@ -229,6 +234,8 @@ if (empty($_POST['email'])) {
 
 <p> Contact us at: <a href="mailto:Dreamchangecoalition@gmail.com">Dreamchangecoalition@gmail.com</p></a>
 
+</p>
+</footer>
 
 </div>
 
