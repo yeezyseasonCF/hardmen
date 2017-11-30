@@ -235,7 +235,7 @@ if (empty($_POST['emailErr'])) {
 
 <br>
 
-<p>3750, Hanamura Drive, Hanamura Japan</p>
+<p>3750, Hanamura Drive, Yokohoma, Japan</p>
 
 <p> Contact us at: <a href="mailto:Dreamchangecoalition@gmail.com">Dreamchangecoalition@gmail.com</p></a>
 
