@@ -82,7 +82,7 @@ $email = "";
 <ul>
 
 	
-	<li><a href="htmlcopeland.html">Home</a></li>
+	<li><a href="index.html">Home</a></li>
 	<li><a href="services.html">Services</a></li>
 	<li><a href="contacts.php">Contact Info</a></li>
 
@@ -147,6 +147,13 @@ $email = "";
 	
 
 
+  <br>New or Returning Customer?
+
+
+  <br><input type="radio" name="customer" value="New">New<br>
+  <input type="radio" name="customer" value="Returning">Returning<br>
+
+
 
 <br>
 
@@ -189,8 +196,6 @@ if (empty($_POST['emailErr'])) {
   <br>New or Returning Customer?
 
 
-  <br><input type="radio" name="customer" value="New">New<br>
-  <input type="radio" name="customer" value="Returning">Returning<br>
 
 </form>
 </div>
