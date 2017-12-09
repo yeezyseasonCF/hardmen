@@ -73,7 +73,11 @@ $email = "";
 <h1>Dream Change Coalition</h1>
 
 
+<div id="italicstuff">
+
 <i>Smart, Safe Banking</i>
+
+</div>
 
 <div id="body">
 

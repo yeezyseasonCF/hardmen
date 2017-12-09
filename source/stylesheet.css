@@ -4,6 +4,11 @@
 /* simple background instructions, I used the overflow commands to make sure I could see when sizes were funky */
 
 
+.bannerone {
+	max-width: 100%
+
+}
+
 body {
 	
 	font-family: 'Roboto Condensed', sans-serif;
@@ -14,6 +19,28 @@ body {
 	overflow-x: hidden;
 	font-kerning: auto;
 
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #999;
+	border: 3px solid #840B23;
+
+
+	width: 100%;
+	max-width: 1800px;
+	min-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	margin-top: 10px;
+	background: #5e6a71;
+	background: rgba(255,255,255,.95);
+	padding: 20px;
+	box-shadow: 5px 5px 5px #000000;	
+	border: 10px solid #840B23;
+	border-radius: 4px;
+	border-style: groove;
+
+
 }
 
 #serviceimg {
@@ -21,6 +48,17 @@ body {
 
 }
 
+#login {
+
+	background-color: #840B23;
+	color: #ccc;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #999;
+	border: 1px solid #333;
+	text-shadow: 0 0 1px #000;
+	width: 10% ;
+}
 
 #reqform {
 	text-align: center;
@@ -41,9 +79,16 @@ img{
 }
 
 #body img {
-	border-style: inset;
+	border-style: groove;
 	border-width: 4px;
 	max-width: 100%;
+	border:3px solid #840B23;
+	box-shadow: 5px 5px 5px #000000;	
+	text-shadow: 3px 3px #FFFFFF;
+	background-color: gray;
+	padding: 1px;
+
+
 
 }
 
@@ -53,7 +98,7 @@ img{
 #menu {
 
 	font-family:'Oswald';
-	opacity: 0.95;
+
 
 }
 
@@ -64,6 +109,7 @@ img{
     list-style-type: none;
 	background-color:#840B23;
     overflow: hidden;
+
     
 
 }
@@ -81,6 +127,7 @@ img{
 
 
 }
+
 
 
 #menu li a {
@@ -106,13 +153,29 @@ img{
 
 }
 
+#italicstuff {
 
-h1 { text-align: center;
+	text-align:center;
+	font-size: 125% ;
+}
+h1 { 
+
+	color:#840B23;
+
+	text-align:center;
+
+	text-shadow: 1px 1px #000000 ;
+
+	font-size:300%;
+
+	font-family: 'Oswald', sans-serif;
+
+	font-style: italic;
 
 }
 
 
-h1,h2,h3 { color: #840B23;
+h2,h3 { color: #840B23;
 font-family: 'Oswald', sans-serif;
 
 }
