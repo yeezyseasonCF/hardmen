@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <html lang="en-US">
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta charset="UTF-8">
 
 <title>Dream Change Coalition</title>
 
-<head>
 
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -205,7 +208,7 @@ if (empty($_POST['emailErr'])) {
 </div>
 
 
-</body>
+
 
 </div>
 
@@ -223,29 +226,30 @@ if (empty($_POST['emailErr'])) {
 
 
 
-<div class="footer">
-
 <footer>
 
-<i>Dream Change Coalition</i>
 
 <br>
 <br>
 
-<a href="https://twitter.com/"> <img src="images/twitter.png" alt="Twitter" style="width: 50px; height:50px;"> </a>
+<a href="https://twitter.com/"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
 
-<a href="https://www.facebook.com/"> <img src="images/facebook.png"  alt="Facebook" style="width: 50px; height:50px;"> </a>
+<a href="https://www.facebook.com/"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+
+
+  <!-- <img src="images/facebook.png"  alt="Facebook" style="width: 50px; height:50px;"> </a> -->
 
 
 <br>
 
 <p>3750, Hanamura Drive, Yokohoma, Japan</p>
 
-<p> Contact us at: <a href="mailto:Dreamchangecoalition@gmail.com">Dreamchangecoalition@gmail.com</p></a>
+<p>This site was created for DTC 477: Advanced Multimedia Authoring at Washington State University by Cody Copeland as a class project.</p><p> This is not a real business. Any similarity to a real business or organization was unintentional.</p>
 
+<p> Contact us at: <a href="mailto:Dreamchangecoalition@gmail.com">Dreamchangecoalition@gmail.com</a>
 </p>
 </footer>
 
-</div>
+</body>
 
 </html>
