@@ -27,7 +27,7 @@ body {
 	overflow-x: hidden;
 	font-kerning: auto;
 	box-shadow: 0px 0px 20px #999;
-	width: 100%;
+	width: 90%;
 	max-width: 1600px;
 	min-width: 1200px;
 	margin-left: auto;
@@ -180,7 +180,7 @@ h1 {
 h2,h3 { color: #840B23;
 	font-family: 'Oswald', sans-serif;
 	font-size: 150%;
-	text-align:center;
+text-align: center;
 
 }
 
