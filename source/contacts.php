@@ -76,7 +76,7 @@ $email = "";
 <h1>Dream Change Coalition</h1>
 
 
-<div id="italicstuff">
+<div class="italicstuff">
 
 <i>Smart, Safe Banking</i>
 
@@ -91,7 +91,7 @@ $email = "";
 	
 	<li><a href="index.html">Home</a></li>
 	<li><a href="services.html">Services</a></li>
-	<li><a href="contacts.html">Contact Info</a></li>
+	<li><a href="contacts.php">Contact Info</a></li>
 
 </ul>
 
@@ -103,7 +103,7 @@ $email = "";
 
 <table style="width:100%">
 	<tr>
-		<th>Postion</th>
+		<th>Position</th>
 		<th>First Name</th>
 		<th>Last Name</th>
 	</tr>
@@ -187,22 +187,17 @@ if (isset($_POST['email'])) {
 
 ?>
 
-<?php 
 
+<!--
+<?php 
 if (empty($_POST['emailErr'])) {
  trigger_error("You must input a valid email address"); }
-
-
-?>
-	
+ ?>
+-->
 
 <br>
 <br>
 <br>
-
-  <br>New or Returning Customer?
-
-
 
 </form>
 </div>
